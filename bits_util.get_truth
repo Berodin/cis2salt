@@ -1,0 +1,10 @@
+# saltstack module needed on all salt-minions to work with the states
+import operator
+
+def get_truth(inp, relate, cut):
+    ops = {'gt': operator.gt,
+           'lt': operator.lt,
+           'ge': operator.ge,
+           'le': operator.le,
+           'eq': operator.eq,
+    return ops[relate](inp, cut)
