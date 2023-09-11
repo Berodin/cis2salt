@@ -1,0 +1,182 @@
+{{ sls }}_rule_9.1.1_3729778:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile'
+    - vname: EnableFirewall
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.1.2_3729781:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile'
+    - vname: DefaultInboundAction
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.1.3_3729784:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile'
+    - vname: DefaultOutboundAction
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_9.1.4_3729787:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile'
+    - vname: DisableNotifications
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.1.5_3729790:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging'
+    - vname: LogFilePath
+    - vtype: reg_sz
+    - vdata: '%SystemRoot%\System32\logfiles\firewall\domainfw.log'
+    
+{{ sls }}_rule_9.1.6_3729792:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging'
+    - vname: LogFileSize
+    - vtype: reg_dword
+    - vdata: '16384'
+    
+{{ sls }}_rule_9.1.7_3729796:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging'
+    - vname: LogDroppedPackets
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.1.8_3729801:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\DomainProfile\Logging'
+    - vname: LogSuccessfulConnections
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.2.1_3729806:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile'
+    - vname: EnableFirewall
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.2.2_3729811:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile'
+    - vname: DefaultInboundAction
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.2.3_3729817:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile'
+    - vname: DefaultOutboundAction
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_9.2.4_3729823:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile'
+    - vname: DisableNotifications
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.2.5_3729828:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging'
+    - vname: LogFilePath
+    - vtype: reg_sz
+    - vdata: '%SystemRoot%\System32\logfiles\firewall\privatefw.log'
+    
+{{ sls }}_rule_9.2.6_3729833:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging'
+    - vname: LogFileSize
+    - vtype: reg_dword
+    - vdata: '16384'
+    
+{{ sls }}_rule_9.2.7_3729839:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging'
+    - vname: LogDroppedPackets
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.2.8_3729843:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PrivateProfile\Logging'
+    - vname: LogSuccessfulConnections
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.3.1_3729848:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile'
+    - vname: EnableFirewall
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.3.2_3729853:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile'
+    - vname: DefaultInboundAction
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.3.3_3729858:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile'
+    - vname: DefaultOutboundAction
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_9.3.4_3729862:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile'
+    - vname: DisableNotifications
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.3.5_3729867:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile'
+    - vname: AllowLocalPolicyMerge
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_9.3.6_3729871:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile'
+    - vname: AllowLocalIPsecPolicyMerge
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_9.3.7_3729875:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging'
+    - vname: LogFilePath
+    - vtype: reg_sz
+    - vdata: '%SystemRoot%\System32\logfiles\firewall\publicfw.log'
+    
+{{ sls }}_rule_9.3.8_3729879:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging'
+    - vname: LogFileSize
+    - vtype: reg_dword
+    - vdata: '16384'
+    
+{{ sls }}_rule_9.3.9_3729884:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging'
+    - vname: LogDroppedPackets
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_9.3.10_3729889:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsFirewall\PublicProfile\Logging'
+    - vname: LogSuccessfulConnections
+    - vtype: reg_dword
+    - vdata: '1'
+    

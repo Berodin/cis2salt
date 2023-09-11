@@ -1,0 +1,416 @@
+{{ sls }}_rule_18.1.3_3729896:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer'
+    - vname: AllowOnlineTips
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.1.1.1_3729880:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization'
+    - vname: NoLockScreenCamera
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.1.1.2_3729886:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Personalization'
+    - vname: NoLockScreenSlideshow
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.1.2.2_3729891:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\InputPersonalization'
+    - vname: AllowInputPersonalization
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.2.1_3729901:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\GPExtensions\{D76B9641-3288-4f75-942D-087DE603E3EA}'
+    - vname: DllName
+    - vtype: reg_sz
+    - vdata: 'C:\Program Files\LAPS\CSE\AdmPwd.dll'
+    
+{{ sls }}_rule_18.2.1_3729904:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\GPExtensions\{D76B9641-3288-4f75-942D-087DE603E3EA}'
+    - vname: DllName
+    - vtype: reg_expand_sz
+    - vdata: 'C:\Program Files\LAPS\CSE\AdmPwd.dll'
+    
+{{ sls }}_rule_18.2.2_3729909:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft Services\AdmPwd'
+    - vname: PwdExpirationProtectionEnabled
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.2.3_3729915:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft Services\AdmPwd'
+    - vname: AdmPwdEnabled
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.2.4_3729920:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft Services\AdmPwd'
+    - vname: PasswordComplexity
+    - vtype: reg_dword
+    - vdata: '4'
+    
+{{ sls }}_rule_18.2.5_3729922:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft Services\AdmPwd'
+    - vname: PasswordLength
+    - vtype: reg_dword
+    - vdata: '15'
+    
+{{ sls }}_rule_18.2.6_3729925:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft Services\AdmPwd'
+    - vname: PasswordAgeDays
+    - vtype: reg_dword
+    - vdata: '30'
+    
+{{ sls }}_rule_18.3.1_3729928:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: LocalAccountTokenFilterPolicy
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.3.2_3729931:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\mrxsmb10'
+    - vname: Start
+    - vtype: reg_dword
+    - vdata: '4'
+    
+{{ sls }}_rule_18.3.3_3729934:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters'
+    - vname: SMB1
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.3.4_3729937:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel'
+    - vname: DisableExceptionChainValidation
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.3.6_3729943:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Parameters'
+    - vname: NodeType
+    - vtype: reg_dword
+    - vdata: '2'
+    
+{{ sls }}_rule_18.3.7_3729945:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest'
+    - vname: UseLogonCredential
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.4.1_3729948:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: AutoAdminLogon
+    - vtype: reg_sz
+    - vdata: '0'
+    
+{{ sls }}_rule_18.4.1_3729950:
+  reg.absent:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: DefaultPassword
+    
+{{ sls }}_rule_18.4.2_3729953:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip6\Parameters'
+    - vname: DisableIPSourceRouting
+    - vtype: reg_dword
+    - vdata: '2'
+    
+{{ sls }}_rule_18.4.3_3729956:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters'
+    - vname: DisableIPSourceRouting
+    - vtype: reg_dword
+    - vdata: '2'
+    
+{{ sls }}_rule_18.4.4_3729958:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters'
+    - vname: EnableICMPRedirect
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.4.5_3729960:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters'
+    - vname: KeepAliveTime
+    - vtype: reg_dword
+    - vdata: '300000'
+    
+{{ sls }}_rule_18.4.6_3729962:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NetBT\Parameters'
+    - vname: nonamereleaseondemand
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.4.7_3729964:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters'
+    - vname: PerformRouterDiscovery
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.4.8_3729966:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager'
+    - vname: SafeDllSearchMode
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.4.9_3729968:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: ScreenSaverGracePeriod
+    - vtype: reg_sz
+    - vdata: '5'
+    
+{{ sls }}_rule_18.4.10_3729970:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\TCPIP6\Parameters'
+    - vname: tcpmaxdataretransmissions
+    - vtype: reg_dword
+    - vdata: '3'
+    
+{{ sls }}_rule_18.4.11_3729972:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Tcpip\Parameters'
+    - vname: tcpmaxdataretransmissions
+    - vtype: reg_dword
+    - vdata: '3'
+    
+{{ sls }}_rule_18.4.12_3729974:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Security'
+    - vname: WarningLevel
+    - vtype: reg_dword
+    - vdata: '90'
+    
+{{ sls }}_rule_18.5.4.1_3729976:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient'
+    - vname: EnableMulticast
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.5.1_3729978:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System'
+    - vname: EnableFontProviders
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.8.1_3729981:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LanmanWorkstation'
+    - vname: AllowInsecureGuestAuth
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.9.1_3729983:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\LLTD'
+    - vname: AllowLLTDIOOndomain
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.9.1_3729988:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\LLTD'
+    - vname: ProhibitLLTDIOOnPrivateNet
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.9.2_3729990:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\LLTD'
+    - vname: AllowRspndrOndomain
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.9.2_3729996:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\LLTD'
+    - vname: ProhibitRspndrOnPrivateNet
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.10.2_3729998:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Peernet'
+    - vname: Disabled
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.5.11.2_3730000:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Network Connections'
+    - vname: NC_AllowNetBridge_NLA
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.11.3_3730002:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Network Connections'
+    - vname: NC_ShowSharedAccessUI
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.11.4_3730004:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Network Connections'
+    - vname: NC_StdDomainUserSetLocation
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.5.14.1_3730006:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths'
+    - vname: \\*\NETLOGON
+    - vtype: reg_sz
+    - vdata: '[Rr]equire([Mm]utual[Aa]uthentication|[Ii]ntegrity)=1.*[Rr]equire([Mm]utual[Aa]uthentication|[Ii]ntegrity)=1'
+    
+{{ sls }}_rule_18.5.14.1_3730008:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\NetworkProvider\HardenedPaths'
+    - vname: \\*\SYSVOL
+    - vtype: reg_sz
+    - vdata: '[Rr]equire([Mm]utual[Aa]uthentication|[Ii]ntegrity)=1.*[Rr]equire([Mm]utual[Aa]uthentication|[Ii]ntegrity)=1'
+    
+{{ sls }}_rule_18.5.19.2.1_3730011:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\TCPIP6\Parameters'
+    - vname: DisabledComponents
+    - vtype: reg_dword
+    - vdata: '255'
+    
+{{ sls }}_rule_18.5.20.1_3730013:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WCN\Registrars'
+    - vname: EnableRegistrars
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.20.1_3730020:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WCN\Registrars'
+    - vname: DisableWPDRegistrar
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.5.20.2_3730022:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WCN\UI'
+    - vname: DisableWcnUi
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.5.21.1_3730024:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy'
+    - vname: fMinimizeConnections
+    - vtype: reg_dword
+    - vdata: '3'
+    
+{{ sls }}_rule_18.5.21.2_3730025:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WcmSvc\GroupPolicy'
+    - vname: fBlockNonDomain
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.7.1.1_3730028:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\PushNotifications'
+    - vname: NoCloudApplicationNotification
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.8.3.1_3730030:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Audit'
+    - vname: ProcessCreationIncludeCmdLine_Enabled
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.8.4.1_3730032:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\CredSSP\Parameters'
+    - vname: AllowEncryptionOracle
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.8.4.2_3730034:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CredentialsDelegation'
+    - vname: AllowProtectedCreds
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.8.14.1_3730048:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Policies\EarlyLaunch'
+    - vname: DriverLoadPolicy
+    - vtype: reg_dword
+    - vdata: '3'
+    
+{{ sls }}_rule_18.8.21.2_3730049:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}'
+    - vname: NoBackgroundPolicy
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.8.21.3_3730050:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}'
+    - vname: NoGPOListChanges
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.8.21.4_3730051:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\System'
+    - vname: EnableCdp
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_18.8.21.5_3730052:
+  reg.absent:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: DisableBkGndGroupPolicy
+    
+{{ sls }}_rule_18.8.22.1.1_3730053:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\Printers'
+    - vname: DisableWebPnPDownload
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_18.8.22.1.2_3730054:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\TabletPC'
+    - vname: PreventHandwritingDataSharing
+    - vtype: reg_dword
+    - vdata: '1'
+    

@@ -1,0 +1,280 @@
+
+{{ sls }}_rule_17.1.1_3729795:
+  lgpo.set:
+    - name: 'Audit Credential Validation'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.2.1_3729803:
+  lgpo.set:
+    - name: 'Audit Application Group Management'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.2.5_3729819:
+  lgpo.set:
+    - name: 'Audit Security Group Management'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.2.5_3729821:
+  lgpo.set:
+    - name: 'Audit Security Group Management'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.2.6_3729824:
+  lgpo.set:
+    - name: 'Audit User Account Management'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.3.1_3729826:
+  lgpo.set:
+    - name: 'Audit PNP Activity'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.3.1_3729829:
+  lgpo.set:
+    - name: 'Audit PNP Activity'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.3.2_3729831:
+  lgpo.set:
+    - name: 'Audit Process Creation'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.3.2_3729834:
+  lgpo.set:
+    - name: 'Audit Process Creation'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.5.1_3729845:
+  lgpo.set:
+    - name: 'Audit Account Lockout'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_FAILURE'
+
+{{ sls }}_rule_17.5.2_3729850:
+  lgpo.set:
+    - name: 'Audit Group Membership'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.5.2_3729852:
+  lgpo.set:
+    - name: 'Audit Group Membership'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.5.3_3729855:
+  lgpo.set:
+    - name: 'Audit Logoff'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.5.3_3729856:
+  lgpo.set:
+    - name: 'Audit Logoff'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.5.4_3729859:
+  lgpo.set:
+    - name: 'Audit Logon'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.5.5_3729861:
+  lgpo.set:
+    - name: 'Audit Other Logon/Logoff Events'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.5.6_3729863:
+  lgpo.set:
+    - name: 'Audit Special Logon'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.5.6_3729865:
+  lgpo.set:
+    - name: 'Audit Special Logon'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.6.1_3729868:
+  lgpo.set:
+    - name: 'Audit Detailed File Share'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_FAILURE'
+
+{{ sls }}_rule_17.6.1_3729869:
+  lgpo.set:
+    - name: 'Audit Detailed File Share'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.6.2_3729872:
+  lgpo.set:
+    - name: 'Audit File Share'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.6.3_3729873:
+  lgpo.set:
+    - name: 'Audit Other Object Access Events'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.6.4_3729876:
+  lgpo.set:
+    - name: 'Audit Removable Storage'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.7.1_3729878:
+  lgpo.set:
+    - name: 'Audit Audit Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.7.1_3729881:
+  lgpo.set:
+    - name: 'Audit Audit Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.7.2_3729883:
+  lgpo.set:
+    - name: 'Audit Authentication Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.7.2_3729885:
+  lgpo.set:
+    - name: 'Audit Authentication Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.7.3_3729888:
+  lgpo.set:
+    - name: 'Audit Authorization Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.7.3_3729890:
+  lgpo.set:
+    - name: 'Audit Authorization Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.7.4_3729892:
+  lgpo.set:
+    - name: 'Audit MPSSVC Rule-Level Policy Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.7.5_3729894:
+  lgpo.set:
+    - name: 'Audit Other Policy Change Events'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_FAILURE'
+
+{{ sls }}_rule_17.7.5_3729897:
+  lgpo.set:
+    - name: 'Audit Other Policy Change Events'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.8.1_3729899:
+  lgpo.set:
+    - name: 'Audit Sensitive Privilege Use'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.9.1_3729902:
+  lgpo.set:
+    - name: 'Audit IPsec Driver'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.9.2_3729906:
+  lgpo.set:
+    - name: 'Audit Other System Events'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.9.3_3729908:
+  lgpo.set:
+    - name: 'Audit Security State Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.9.3_3729911:
+  lgpo.set:
+    - name: 'Audit Security State Change'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.9.4_3729914:
+  lgpo.set:
+    - name: 'Audit Security System Extension'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS'
+
+{{ sls }}_rule_17.9.4_3729916:
+  lgpo.set:
+    - name: 'Audit Security System Extension'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'
+
+{{ sls }}_rule_17.9.5_3729917:
+  lgpo.set:
+    - name: 'Audit System Integrity'
+    - policy_class: Machine
+    - setting: 
+      - 'AUDIT_SUCCESS_FAILURE'

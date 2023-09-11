@@ -1,0 +1,759 @@
+
+{{ sls }}_rule_2.2.1_3729764:
+  lgpo.set:
+    - name: 'Access Credential Manager as a trusted caller'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.3_3729766:
+  lgpo.set:
+    - name: 'Access this computer from the network'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-11'
+
+{{ sls }}_rule_2.2.4_3729767:
+  lgpo.set:
+    - name: 'Act as part of the operating system'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.6_3729769:
+  lgpo.set:
+    - name: 'Adjust memory quotas for a process'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-19'
+      - 'S-1-5-20'
+
+{{ sls }}_rule_2.2.7_3729770:
+  lgpo.set:
+    - name: 'Allow log on locally'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.9_3729772:
+  lgpo.set:
+    - name: 'Allow log on through Remote Desktop Services'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-32-555'
+
+{{ sls }}_rule_2.2.10_3729773:
+  lgpo.set:
+    - name: 'Back up files and directories'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.11_3729774:
+  lgpo.set:
+    - name: 'Change the system time'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-19'
+
+{{ sls }}_rule_2.2.12_3729775:
+  lgpo.set:
+    - name: 'Change the time zone'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-19'
+
+{{ sls }}_rule_2.2.13_3729776:
+  lgpo.set:
+    - name: 'Create a pagefile'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.14_3729777:
+  lgpo.set:
+    - name: 'Create a token object'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.15_3729779:
+  lgpo.set:
+    - name: 'Create global objects'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-19'
+      - 'S-1-5-20'
+      - 'S-1-5-6'
+
+{{ sls }}_rule_2.2.16_3729780:
+  lgpo.set:
+    - name: 'Create permanent shared objects'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.18_3729783:
+  lgpo.set:
+    - name: 'Create symbolic links'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-83-0'
+
+{{ sls }}_rule_2.2.19_3729785:
+  lgpo.set:
+    - name: 'Debug programs'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.21_3729788:
+  lgpo.set:
+    - name: 'Deny access to this computer from the network'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-546'
+      - 'S-1-5-114'
+
+{{ sls }}_rule_2.2.22_3729789:
+  lgpo.set:
+    - name: 'Deny log on as a batch job'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-546'
+
+{{ sls }}_rule_2.2.23_3729791:
+  lgpo.set:
+    - name: 'Deny log on as a service'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-546'
+
+{{ sls }}_rule_2.2.24_3729793:
+  lgpo.set:
+    - name: 'Deny log on locally'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-546'
+
+{{ sls }}_rule_2.2.26_3729797:
+  lgpo.set:
+    - name: 'Deny log on through Remote Desktop Services'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-546'
+      - 'S-1-5-113'
+
+{{ sls }}_rule_2.2.28_3729802:
+  lgpo.set:
+    - name: 'Enable computer and user accounts to be trusted for delegation'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.29_3729804:
+  lgpo.set:
+    - name: 'Force shutdown from a remote system'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.30_3729807:
+  lgpo.set:
+    - name: 'Generate security audits'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-19'
+      - 'S-1-5-20'
+
+{{ sls }}_rule_2.2.32_3729812:
+  lgpo.set:
+    - name: 'Impersonate a client after authentication'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-19'
+      - 'S-1-5-20'
+      - 'S-1-5-6'
+      - 'S-1-5-32-568'
+
+{{ sls }}_rule_2.2.33_3729814:
+  lgpo.set:
+    - name: 'Increase scheduling priority'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-32-544'
+      - 'S-1-5-90-0'
+
+{{ sls }}_rule_2.2.34_3729818:
+  lgpo.set:
+    - name: 'Load and unload device drivers'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.35_3729820:
+  lgpo.set:
+    - name: 'Lock pages in memory'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.38_3729827:
+  lgpo.set:
+    - name: 'Manage auditing and security log'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.39_3729830:
+  lgpo.set:
+    - name: 'Modify an object label'
+    - policy_class: Machine
+    - setting: 
+      - 'NONE'
+
+{{ sls }}_rule_2.2.40_3729832:
+  lgpo.set:
+    - name: 'Modify firmware environment values'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.41_3729835:
+  lgpo.set:
+    - name: 'Perform volume maintenance tasks'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.42_3729837:
+  lgpo.set:
+    - name: 'Profile single process'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.43_3729841:
+  lgpo.set:
+    - name: 'Profile system performance'
+    - policy_class: Machine
+    - setting:
+      
+
+{{ sls }}_rule_2.2.44_3729844:
+  lgpo.set:
+    - name: 'Replace a process level token'
+    - policy_class: Machine
+    - setting:
+      - 'S-1-5-19'
+      - 'S-1-5-20'
+
+{{ sls }}_rule_2.2.45_3729846:
+  lgpo.set:
+    - name: 'Restore files and directories'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.46_3729849:
+  lgpo.set:
+    - name: 'Shut down the system'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.2.48_3729854:
+  lgpo.set:
+    - name: 'Take ownership of files or other objects'
+    - policy_class: Machine
+    - setting: 
+      - 'S-1-5-32-544'
+
+{{ sls }}_rule_2.3.1.1_3729857:
+  lgpo.set:
+    - name: 'Accounts: Administrator account status'
+    - policy_class: Machine
+    - setting: 0
+{{ sls }}_rule_2.3.1.2_3729860:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: NoConnectedUser
+    - vtype: reg_dword
+    - vdata: '3'
+    
+
+{{ sls }}_rule_2.3.1.3_3729864:
+  lgpo.set:
+    - name: 'Accounts: Guest account status'
+    - policy_class: Machine
+    - setting: 0
+{{ sls }}_rule_2.3.1.4_3729866:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: LimitBlankPasswordUse
+    - vtype: reg_dword
+    - vdata: '1'
+    
+
+{{ sls }}_rule_2.3.1.5_3729870:
+  lgpo.set:
+    - name: 'Accounts: Rename administrator account'
+    - policy_class: Machine
+    - setting: 'None'
+
+{{ sls }}_rule_2.3.1.6_3729874:
+  lgpo.set:
+    - name: 'Accounts: Rename guest account'
+    - policy_class: Machine
+    - setting: 'None'
+{{ sls }}_rule_2.3.2.1_3729877:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: SCENoApplyLegacyAuditPolicy
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.2.2_3729882:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\LSA'
+    - vname: CrashOnAuditFail
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.4.1_3729887:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: AllocateDASD
+    - vtype: reg_sz
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.4.2_3729893:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Print\Providers\LanMan Print Services\Servers'
+    - vname: AddPrinterDrivers
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.6.1_3729913:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: RequireSignOrSeal
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.6.2_3729918:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: SealSecureChannel
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.6.3_3729921:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: SignSecureChannel
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.6.4_3729924:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: DisablePasswordChange
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.6.5_3729927:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: MaximumPasswordAge
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.6.5_3729930:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: MaximumPasswordAge
+    - vtype: reg_dword
+    - vdata: '30'
+    
+{{ sls }}_rule_2.3.6.6_3729933:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Netlogon\Parameters'
+    - vname: RequireStrongKey
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.7.1_3729936:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: DisableCAD
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.7.2_3729939:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: DontDisplayLastUserName
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.7.3_3729942:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: InactivityTimeoutSecs
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.7.3_3729944:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: InactivityTimeoutSecs
+    - vtype: reg_dword
+    - vdata: '900'
+    
+{{ sls }}_rule_2.3.7.4_3729947:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: LegalNoticeText
+    - vtype: reg_sz
+    - vdata: '.+'
+    
+{{ sls }}_rule_2.3.7.5_3729949:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: LegalNoticeCaption
+    - vtype: reg_sz
+    - vdata: '.+'
+    
+{{ sls }}_rule_2.3.7.6_3729952:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: CachedLogonsCount
+    - vtype: reg_sz
+    - vdata: '^[43210]$'
+    
+{{ sls }}_rule_2.3.7.7_3729955:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: PasswordExpiryWarning
+    - vtype: reg_dword
+    - vdata: '14'
+    
+{{ sls }}_rule_2.3.7.7_3729957:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: passwordexpirywarning
+    - vtype: reg_dword
+    - vdata: '5'
+    
+{{ sls }}_rule_2.3.7.8_3729959:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: ForceUnlockLogon
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.7.9_3729961:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon'
+    - vname: ScRemoveOption
+    - vtype: reg_sz
+    - vdata: '^(1|2|3)$'
+    
+{{ sls }}_rule_2.3.8.1_3729963:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters'
+    - vname: RequireSecuritySignature
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.8.2_3729965:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters'
+    - vname: EnableSecuritySignature
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.8.3_3729967:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanWorkstation\Parameters'
+    - vname: EnablePlainTextPassword
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.9.1_3729969:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: AutoDisconnect
+    - vtype: reg_dword
+    - vdata: '15'
+    
+{{ sls }}_rule_2.3.9.2_3729971:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: RequireSecuritySignature
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.9.3_3729973:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: EnableSecuritySignature
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.9.4_3729975:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: enableforcedlogoff
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.9.5_3729977:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: SMBServerNameHardeningLevel
+    - vtype: reg_dword
+    - vdata: '1'
+    
+
+{{ sls }}_rule_2.3.10.1_3729979:
+  lgpo.set:
+    - name: 'Network access: Allow anonymous SID/Name translation'
+    - policy_class: Machine
+    - setting: 
+      - 'False'
+{{ sls }}_rule_2.3.10.2_3729980:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: RestrictAnonymousSAM
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.10.3_3729982:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: RestrictAnonymous
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.10.4_3729984:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: DisableDomainCreds
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.10.5_3729986:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: EveryoneIncludesAnonymous
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.10.7_3729991:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: NullSessionPipes
+    - vtype: reg_multi_sz
+    - vdata:
+      0
+      
+{{ sls }}_rule_2.3.10.8_3729993:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedExactPaths'
+    - vname: Machine
+    - vtype: reg_multi_sz
+    - vdata:
+      System\CurrentControlSet\Control\ProductOptions,System\CurrentControlSet\Control\Server Applications,Software\Microsoft\Windows NT\CurrentVersion
+      
+{{ sls }}_rule_2.3.10.9_3729995:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\SecurePipeServers\Winreg\AllowedPaths'
+    - vname: Machine
+    - vtype: reg_multi_sz
+    - vdata:
+      System\CurrentControlSet\Control\Print\Printers,System\CurrentControlSet\Services\Eventlog,Software\Microsoft\OLAP Server,Software\Microsoft\Windows NT\CurrentVersion\Print,Software\Microsoft\Windows NT\CurrentVersion\Windows,System\CurrentControlSet\Control\ContentIndex,System\CurrentControlSet\Control\Terminal Server,System\CurrentControlSet\Control\Terminal Server\UserConfig,System\CurrentControlSet\Control\Terminal Server\DefaultUserConfiguration,Software\Microsoft\Windows NT\CurrentVersion\Perflib,System\CurrentControlSet\Services\SysmonLog,System\CurrentControlSet\Services\CertSvc,System\CurrentControlSet\Services\WINS
+      
+{{ sls }}_rule_2.3.10.10_3729997:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: RestrictNullSessAccess
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.10.11_3729999:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa'
+    - vname: restrictremotesam
+    - vtype: reg_sz
+    - vdata: 'O:BAG:BAD:(A;;RC;;;BA)'
+    
+{{ sls }}_rule_2.3.10.12_3730001:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: NullSessionShares
+    - vtype: reg_multi_sz
+    - vdata:
+      ^$
+      
+{{ sls }}_rule_2.3.10.12_3730003:
+  reg.absent:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanManServer\Parameters'
+    - vname: NullSessionShares
+    
+{{ sls }}_rule_2.3.10.13_3730005:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: ForceGuest
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.11.1_3730007:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: UseMachineId
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.11.2_3730009:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0'
+    - vname: AllowNullSessionFallback
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.11.3_3730010:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\pku2u'
+    - vname: AllowOnlineID
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.11.4_3730012:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System\Kerberos\Parameters'
+    - vname: SupportedEncryptionTypes
+    - vtype: reg_dword
+    - vdata: '2147483640'
+    
+{{ sls }}_rule_2.3.11.5_3730015:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: NoLMHash
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.11.7_3730017:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa'
+    - vname: LmCompatibilityLevel
+    - vtype: reg_dword
+    - vdata: '5'
+    
+{{ sls }}_rule_2.3.11.8_3730019:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LDAP'
+    - vname: LDAPClientIntegrity
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.11.9_3730021:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0'
+    - vname: NTLMMinClientSec
+    - vtype: reg_dword
+    - vdata: '537395200'
+    
+{{ sls }}_rule_2.3.11.10_3730023:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\MSV1_0'
+    - vname: NTLMMinServerSec
+    - vtype: reg_dword
+    - vdata: '537395200'
+    
+{{ sls }}_rule_2.3.13.1_3730026:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: ShutdownWithoutLogon
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.15.1_3730027:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Kernel'
+    - vname: ObCaseInsensitive
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.15.2_3730029:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager'
+    - vname: ProtectionMode
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.17.1_3730031:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: FilterAdministratorToken
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.17.2_3730033:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: ConsentPromptBehaviorAdmin
+    - vtype: reg_dword
+    - vdata: '2'
+    
+{{ sls }}_rule_2.3.17.3_3730035:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: ConsentPromptBehaviorUser
+    - vtype: reg_dword
+    - vdata: '0'
+    
+{{ sls }}_rule_2.3.17.4_3730037:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: EnableInstallerDetection
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.17.5_3730039:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: EnableSecureUIAPaths
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.17.6_3730042:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: EnableLUA
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.17.7_3730044:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: PromptOnSecureDesktop
+    - vtype: reg_dword
+    - vdata: '1'
+    
+{{ sls }}_rule_2.3.17.8_3730046:
+  reg.present:
+    - name: 'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System'
+    - vname: EnableVirtualization
+    - vtype: reg_dword
+    - vdata: '1'
+    

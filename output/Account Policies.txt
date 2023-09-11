@@ -1,0 +1,149 @@
+
+{% set min_Enforce_password_history = 24 %}
+{% set current_Enforce_password_history = salt['lgpo.get_policy']('Enforce password history','Machine')|int %}
+{{ sls }}_rule_1.1.1_3729753:
+  lgpo.set:
+    - name: 'Enforce password history'
+    - policy_class: 'Machine'
+    - setting: {{ min_Enforce_password_history }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Enforce_password_history }}
+        - lt
+        - {{ min_Enforce_password_history }}
+        
+
+{% set max_Maximum_password_age = 5184000 %}
+{% set current_Maximum_password_age = salt['lgpo.get_policy']('Maximum password age','Machine')|int %}
+{{ sls }}_rule_1.1.2_3729754:
+  lgpo.set:
+    - name: 'Maximum password age'
+    - policy_class: 'Machine'
+    - setting: {{ max_Maximum_password_age }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Maximum_password_age }}
+        - ge
+        - {{ max_Maximum_password_age }}
+        
+
+{% set min_Maximum_password_age = 0 %}
+{% set current_Maximum_password_age = salt['lgpo.get_policy']('Maximum password age','Machine')|int %}
+{{ sls }}_rule_1.1.2_3729755:
+  lgpo.set:
+    - name: 'Maximum password age'
+    - policy_class: 'Machine'
+    - setting: {{ min_Maximum_password_age }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Maximum_password_age }}
+        - le
+        - {{ min_Maximum_password_age }}
+        
+
+{% set min_Minimum_password_age = 86400 %}
+{% set current_Minimum_password_age = salt['lgpo.get_policy']('Minimum password age','Machine')|int %}
+{{ sls }}_rule_1.1.3_3729756:
+  lgpo.set:
+    - name: 'Minimum password age'
+    - policy_class: 'Machine'
+    - setting: {{ min_Minimum_password_age }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Minimum_password_age }}
+        - lt
+        - {{ min_Minimum_password_age }}
+        
+
+{% set min_Minimum_password_length = 14 %}
+{% set current_Minimum_password_length = salt['lgpo.get_policy']('Minimum password length','Machine')|int %}
+{{ sls }}_rule_1.1.4_3729757:
+  lgpo.set:
+    - name: 'Minimum password length'
+    - policy_class: 'Machine'
+    - setting: {{ min_Minimum_password_length }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Minimum_password_length }}
+        - lt
+        - {{ min_Minimum_password_length }}
+        
+
+{{ sls }}_rule_1.1.5_3729758:
+  lgpo.set:
+    - name: 'Password must meet complexity requirements'
+    - policy_class: Machine
+    - setting: 
+      - '1'
+
+{{ sls }}_rule_1.1.6_3729759:
+  lgpo.set:
+    - name: 'Store passwords using reversible encryption'
+    - policy_class: Machine
+    - setting: 
+      - '0'
+
+{% set min_Account_lockout_duration = 900 %}
+{% set current_Account_lockout_duration = salt['lgpo.get_policy']('Account lockout duration','Machine')|int %}
+{{ sls }}_rule_1.2.1_3729760:
+  lgpo.set:
+    - name: 'Account lockout duration'
+    - policy_class: 'Machine'
+    - setting: {{ min_Account_lockout_duration }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Account_lockout_duration }}
+        - lt
+        - {{ min_Account_lockout_duration }}
+        
+
+{% set max_Account_lockout_threshold = 10 %}
+{% set current_Account_lockout_threshold = salt['lgpo.get_policy']('Account lockout threshold','Machine')|int %}
+{{ sls }}_rule_1.2.2_3729761:
+  lgpo.set:
+    - name: 'Account lockout threshold'
+    - policy_class: 'Machine'
+    - setting: {{ max_Account_lockout_threshold }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Account_lockout_threshold }}
+        - ge
+        - {{ max_Account_lockout_threshold }}
+        
+
+{% set min_Account_lockout_threshold = 0 %}
+{% set current_Account_lockout_threshold = salt['lgpo.get_policy']('Account lockout threshold','Machine')|int %}
+{{ sls }}_rule_1.2.2_3729762:
+  lgpo.set:
+    - name: 'Account lockout threshold'
+    - policy_class: 'Machine'
+    - setting: {{ min_Account_lockout_threshold }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Account_lockout_threshold }}
+        - le
+        - {{ min_Account_lockout_threshold }}
+        
+
+{% set min_Reset_account_lockout_counter_after = 900 %}
+{% set current_Reset_account_lockout_counter_after = salt['lgpo.get_policy']('Reset account lockout counter after','Machine')|int %}
+{{ sls }}_rule_1.2.3_3729763:
+  lgpo.set:
+    - name: 'Reset account lockout counter after'
+    - policy_class: 'Machine'
+    - setting: {{ min_Reset_account_lockout_counter_after }}
+    - onlyif:
+    - fun: bits_utils.get_truth
+        args:
+        - {{ current_Reset_account_lockout_counter_after }}
+        - lt
+        - {{ min_Reset_account_lockout_counter_after }}
+        
