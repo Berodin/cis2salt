@@ -12,15 +12,3 @@ Honestly, I am no scripter, neither a programmer. This happened in my free time 
 
 ## bits_util function
 In some states I worked with the "lesser than or equal", "Greater than of equal" from the CIS Recommendation. Since Salt itself can only express one value in a strict manner, I implemented a saltstack module which allowes me to check, whether the system value is in an allowed state.
-
-The saltstack module bits_util.get_truth looks like this:
-
-import operator
-
-def get_truth(inp, relate, cut):
-    ops = {'gt': operator.gt,
-           'lt': operator.lt,
-           'ge': operator.ge,
-           'le': operator.le,
-           'eq': operator.eq,
-    return ops[relate](inp, cut)
